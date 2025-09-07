@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入會申請 - 香港區塊鏈協會 | HKBA.club</title>
+    <meta name="description" content="加入香港區塊鏈協會，享受專業的區塊鏈服務和豐富的會員權益。立即填寫入會申請表。">
+    <meta name="keywords" content="香港區塊鏈協會, HKBA, 入會申請, 會員申請, 區塊鏈協會, 會員服務">
+    <meta name="author" content="香港區塊鏈協會">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="入會申請 - 香港區塊鏈協會">
+    <meta property="og:description" content="加入香港區塊鏈協會，享受專業的區塊鏈服務和豐富的會員權益">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hkba.club/membership-application.html">
+    <meta property="og:image" content="https://hkba.club/assets/logo.svg">
+    <link rel="canonical" href="https://hkba.club/membership-application.html">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="../index.html" class="nav-logo-link">
+                    <img src="../assets/logo.svg" alt="HKBA Logo" class="logo">
+                    <span class="logo-text">HKBA.club</span>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">首頁</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">關於我們</a></li>
+                    <li class="nav-item"><a href="membership.html" class="nav-link">會員服務</a></li>
+                    <li class="nav-item"><a href="governance.html" class="nav-link">治理制度</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">新聞活動</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">聯繫我們</a></li>
+                    <li class="nav-item"><a href="membership-application.html" class="nav-link cta-button active">立即入會</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">入會申請</h1>
+            <p class="page-subtitle">加入香港區塊鏈協會，共同推動區塊鏈技術發展</p>
+            <nav class="breadcrumb">
+                <a href="../index.html">首頁</a>
+                <span>/</span>
+                <a href="membership.html">會員服務</a>
+                <span>/</span>
+                <span>入會申請</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Membership Benefits Overview -->
+    <section class="membership-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">會員權益</h2>
+                <p class="section-subtitle">成為HKBA會員，享受豐富的專業服務和發展機會</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>專業培訓</h3>
+                    <p>獲得最新的區塊鏈技術培訓和認證機會</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>商務網絡</h3>
+                    <p>與行業領袖和專家建立寶貴的商務聯繫</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>國際交流</h3>
+                    <p>參與國際區塊鏈會議和交流活動</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>項目孵化</h3>
+                    <p>獲得項目孵化和投資對接機會</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>香港區塊鏈協會 HKBA 入會申請表</h2>
+                    <p>Hong Kong Blockchain Association HKBA Membership Application Form</p>
+                </div>
+                
+                <form id="membershipForm" class="membership-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">個人資料 Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="chineseName">姓名 中文 Chinese Name *</label>
+                                <input type="text" id="chineseName" name="chineseName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">性別 Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">請選擇</option>
+                                    <option value="male">男 Male</option>
+                                    <option value="female">女 Female</option>
+                                    <option value="other">其他 Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="englishName">姓名 英文 English Name *</label>
+                                <input type="text" id="englishName" name="englishName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobTitle">職位 Job Title</label>
+                                <input type="text" id="jobTitle" name="jobTitle">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="organization">企業機構名 Organization Name</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="socialMedia">SNS WeChat/FB/IG/LN X/Twitter</label>
+                                <input type="text" id="socialMedia" name="socialMedia">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">電話 Tel Office/Home *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">郵箱 Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobile">手機 Mobile WhatsApp/Telegram *</label>
+                                <input type="tel" id="mobile" name="mobile" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">通訊位址 Address Work/Home</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="personalDescription">個人介紹名片 簡歷 相片 主要學歷和經歷 Personal Description, Biz Card, Photos, Bio, CV, Photos for HKBA.club website listing</label>
+                            <textarea id="personalDescription" name="personalDescription" rows="4" placeholder="請簡要介紹您的背景、經歷和專業領域..."></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="skills">Pls List Your Blockchain/Web3 Skills 區塊鏈/Web3技能</label>
+                            <textarea id="skills" name="skills" rows="3" placeholder="請列出您的區塊鏈和Web3相關技能..."></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="companyDescription">企業機構 介紹名片 簡歷 Company/Organization Description, Business Card, Website links, Photos, Logos for HKBA website listing</label>
+                            <textarea id="companyDescription" name="companyDescription" rows="4" placeholder="請介紹您的企業機構..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- How did you know HKBA -->
+                    <div class="form-section">
+                        <h3 class="section-title">了解途徑 How did you know HKBA</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="howKnow" value="education">
+                                <span class="checkmark"></span>
+                                教育培訓 Education Training
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="howKnow" value="events">
+                                <span class="checkmark"></span>
+                                活動聚會 Events Networking
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="howKnow" value="consulting">
+                                <span class="checkmark"></span>
+                                諮詢顧問 Job Consultancy
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="howKnow" value="others">
+                                <span class="checkmark"></span>
+                                其他 Others
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Membership Type -->
+                    <div class="form-section">
+                        <h3 class="section-title">會員類型 Membership Type</h3>
+                        <div class="membership-types">
+                            <div class="membership-option">
+                                <input type="radio" id="corporate" name="membershipType" value="corporate" required>
+                                <label for="corporate" class="membership-card">
+                                    <div class="membership-header">
+                                        <h4>企業會員 Corporate Member</h4>
+                                        <div class="price">HK$50,000</div>
+                                    </div>
+                                    <ul class="membership-benefits-list">
+                                        <li>完整的企業會員權益</li>
+                                        <li>品牌推廣和展示機會</li>
+                                        <li>優先參與重要活動</li>
+                                        <li>專屬商務對接服務</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            <div class="membership-option">
+                                <input type="radio" id="sme" name="membershipType" value="sme">
+                                <label for="sme" class="membership-card">
+                                    <div class="membership-header">
+                                        <h4>中小企會員 SME Member</h4>
+                                        <div class="price">HK$5,000</div>
+                                    </div>
+                                    <ul class="membership-benefits-list">
+                                        <li>基礎會員服務</li>
+                                        <li>技術培訓機會</li>
+                                        <li>行業交流活動</li>
+                                        <li>項目合作機會</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            <div class="membership-option">
+                                <input type="radio" id="individual" name="membershipType" value="individual">
+                                <label for="individual" class="membership-card">
+                                    <div class="membership-header">
+                                        <h4>個人會員 Individual Member</h4>
+                                        <div class="price">HK$1,500</div>
+                                    </div>
+                                    <ul class="membership-benefits-list">
+                                        <li>個人專業發展</li>
+                                        <li>學習培訓資源</li>
+                                        <li>網絡建設機會</li>
+                                        <li>行業資訊獲取</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            <div class="membership-option">
+                                <input type="radio" id="student" name="membershipType" value="student">
+                                <label for="student" class="membership-card">
+                                    <div class="membership-header">
+                                        <h4>學生會員 Student Member</h4>
+                                        <div class="price">HK$100</div>
+                                    </div>
+                                    <ul class="membership-benefits-list">
+                                        <li>學生專屬優惠</li>
+                                        <li>教育資源獲取</li>
+                                        <li>實習就業機會</li>
+                                        <li>學術交流平台</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agreement -->
+                    <div class="form-section">
+                        <h3 class="section-title">申請聲明 Application Statement</h3>
+                        <div class="agreement-text">
+                            <p>本人願意守候會章，遵照上述資料完整無誤，可供香港區塊鏈協會 HKBA 作申請會員用途。</p>
+                            <p>I hereby apply for membership in the Hong Kong Blockchain Association HKBA and agree to abide by the rules and regulations of the HKBA. I further confirm that the information furnished above is complete and accurate and can be used by the Association for membership related purposes.</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="signature">申請人簽名 Membership Application Signature *</label>
+                                <input type="text" id="signature" name="signature" required placeholder="請輸入您的姓名作為電子簽名">
+                            </div>
+                            <div class="form-group">
+                                <label for="applicationDate">日期 Date *</label>
+                                <input type="date" id="applicationDate" name="applicationDate" required>
+                            </div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="agreement" required>
+                                <span class="checkmark"></span>
+                                我同意並接受香港區塊鏈協會的會員條款和條件 I agree to the terms and conditions of HKBA membership
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="privacy">
+                                <span class="checkmark"></span>
+                                我同意接收HKBA的活動通知和會員資訊 I agree to receive HKBA event notifications and member information
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            提交申請 Submit Application
+                        </button>
+                        <p class="form-note">
+                            提交後我們將在3個工作日內與您聯繫確認申請詳情
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>郵箱聯繫</h3>
+                    <p>info@HKBA.club</p>
+                    <p>membership@HKBA.club</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>電話諮詢</h3>
+                    <p>+852-36981919</p>
+                    <p>工作日 9:00-18:00</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>辦公地址</h3>
+                    <p>香港中環德輔道中41號</p>
+                    <p>裕泰商業大廈5-10樓</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/logo.svg" alt="HKBA Logo">
+                        <span>HKBA.club</span>
+                    </div>
+                    <p>香港區塊鏈協會致力於推動區塊鏈技術發展和應用，為會員提供專業服務和發展機會。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速鏈接</h4>
+                    <ul>
+                        <li><a href="../index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="membership.html">會員服務</a></li>
+                        <li><a href="governance.html">治理制度</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯繫我們</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@HKBA.club</li>
+                        <li><i class="fas fa-phone"></i> +852-36981919</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 香港中環德輔道中41號</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 香港區塊鏈協會 (HKBA). 保留所有權利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script>
+        // Form validation and submission
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            if (isValid) {
+                // Show success message
+                alert('申請已提交！我們將在3個工作日內與您聯繫。\n\nApplication submitted! We will contact you within 3 business days.');
+                
+                // Here you would typically send the form data to your server
+                console.log('Form data:', new FormData(this));
+            } else {
+                alert('請填寫所有必填項目。\n\nPlease fill in all required fields.');
+            }
+        });
+        
+        // Auto-fill current date
+        document.getElementById('applicationDate').valueAsDate = new Date();
+    </script>
+</body>
+</html>
