@@ -1,5 +1,19 @@
-/* Import Google Fonts */
+/* Import Google Fonts with font-display optimization */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Performance optimizations */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improve rendering performance */
+.hero-visual,
+.blockchain-animation,
+.feature-icon {
+    will-change: transform;
+    transform: translateZ(0);
+}
 
 /* Reset and Base Styles */
 * {
@@ -957,6 +971,29 @@ section {
 }
 
 /* Responsive Design */
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-container {
+        gap: 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .nav-menu {
+        gap: 20px;
+    }
+    
+    .about-content {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
